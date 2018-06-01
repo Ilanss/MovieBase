@@ -65,13 +65,24 @@
                                             <button type="submit" class="btn btn-outline-secondary pull-right disabled" name="list"
                                                     id="submit">Déjà dans ma liste
                                             </button>
-                                        <form action="film/view" method="post">
-                                            <input type="hidden" value="<?php echo $film->id ?>" name="vu">
-                                            <button type="submit" class="btn btn-outline-primary pull-right"
-                                                    id="submit">Film visionné
-                                            </button>
-                                        </form>
                                         <?php
+                                        if($film->vu) {
+                                            ?>
+                                            <button type="submit" class="btn btn-outline-secondary pull-right disabled" name="vu"
+                                                    id="submit">Déjà vu!
+                                            </button>
+                                            <?php
+                                        }
+                                        else {
+                                            ?>
+                                            <form action="film/view" method="post">
+                                                <input type="hidden" value="<?php echo $film->id ?>" name="vu">
+                                                <button type="submit" class="btn btn-outline-primary pull-right"
+                                                        id="submit">Film visionné
+                                                </button>
+                                            </form>
+                                            <?php
+                                        }
                                     }
                                     else{
                                         ?>
