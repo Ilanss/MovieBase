@@ -65,8 +65,9 @@
                                             <button type="submit" class="btn btn-outline-secondary pull-right disabled" name="list"
                                                     id="submit">Déjà dans ma liste
                                             </button>
-                                        <form action="#" onsubmit="return validateFormOnSubmit(this);" method="post">
-                                            <button type="submit" class="btn btn-outline-primary pull-right" name="vu"
+                                        <form action="film/view" method="post">
+                                            <input type="hidden" value="<?php echo $film->id ?>" name="vu">
+                                            <button type="submit" class="btn btn-outline-primary pull-right"
                                                     id="submit">Film visionné
                                             </button>
                                         </form>
@@ -74,7 +75,8 @@
                                     }
                                     else{
                                         ?>
-                                        <form action="#" onsubmit="return validateFormOnSubmit(this);" method="post">
+                                        <form action="film/add" method="post">
+                                        <input type="hidden" value="<?php echo $film->id; ?>" name="id">
                                             <button type="submit" class="btn btn-outline-primary pull-right" name="list"
                                                     id="submit">Ajouter à ma liste
                                             </button>

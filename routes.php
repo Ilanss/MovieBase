@@ -40,6 +40,16 @@ switch ($request_uri[0]) {
         require('views/film/create.html.php');
         break;
 
+    case '/film/add':
+        require_once ('controllers/film.ctrl.php');
+        filmCtrl::add();
+        break;
+
+    case '/film/view':
+        require_once ('controllers/film.ctrl.php');
+        filmCtrl::view();
+        break;
+
     case '/user/create':
         if(isset($_POST['submit'])){
             require_once ('controllers/utilisateur.ctrl.php');
