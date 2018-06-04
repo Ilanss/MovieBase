@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db16f7d8-1aaa-4dd4-9622-5c49bd43acf7" name="Default" comment="">
+    <list default="true" id="db16f7d8-1aaa-4dd4-9622-5c49bd43acf7" name="Default" comment="Bug correction for Add and View">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/8Xo5iajzeK1PYeidHK2PPsgli2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/9EwjVrXqYmm3Q5xWJyG1TmtTF8j.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/g94IcdzPswTYl1ISdgn2EwvaZtt.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/oomdTdke7dqffdDoDV1fFBV4fJY.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/pNLGDvsJyTRdjVUJdc4iy6BQYK5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/uIMcxe36h9K3K1RFuhCtdo0UiY9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/xcKR6cAhdGmZQxyFfBqW5oPUF6E.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/poster/ybjooZMNlRBaFNfs52XqONc4Xyw.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/film.model.php" afterPath="$PROJECT_DIR$/models/film.model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/film/index.html.php" afterPath="$PROJECT_DIR$/views/film/index.html.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,20 +34,22 @@
       <file leaf-file-name="film.ctrl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/film.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="110" column="51" lean-forward="true" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+            <state relative-caret-position="651">
+              <caret line="160" column="55" lean-forward="true" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/film/index.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+            <state relative-caret-position="105">
+              <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
               <folding>
-                <element signature="e#1172#1179#1#HTML" expanded="true" />
+                <element signature="e#804#811#1#HTML" expanded="true" />
+                <marker date="1528103616000" expanded="true" signature="7960:8049" ph="..." />
+                <marker date="1528103616000" expanded="true" signature="8005:8040" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -70,7 +78,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
+            <state relative-caret-position="675">
               <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
               <folding />
             </state>
@@ -80,33 +88,33 @@
       <file leaf-file-name="create.html.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/film/create.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="20" column="116" lean-forward="false" selection-start-line="20" selection-start-column="116" selection-end-line="20" selection-end-column="116" />
               <folding>
-                <marker date="1527774096000" expanded="true" signature="704:1079" ph="..." />
-                <marker date="1527774096000" expanded="true" signature="1120:1375" ph="..." />
+                <marker date="1528101624000" expanded="true" signature="704:1012" ph="..." />
+                <marker date="1528101624000" expanded="true" signature="1053:1320" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="film.model.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="film.model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/film.model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="38" column="125" lean-forward="false" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+            <state relative-caret-position="111">
+              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="37" />
               <folding>
-                <marker date="1527858176000" expanded="true" signature="236:250" ph="SELECT * FRO... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="236:264" ph="SELECT * FRO... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="502:509" ph="SELECT * FRO... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="502:660" ph="SELECT * FRO... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="502:661" ph="SELECT * FRO... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="502:662" ph="SELECT * FRO... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="1170:1366" ph="SELECT title... ${self::$table}" />
-                <marker date="1527858176000" expanded="true" signature="1867:1879" ph="INSERT INTO ${self::$table}... " />
-                <marker date="1527858176000" expanded="true" signature="1867:1961" ph="INSERT INTO ${self::$table}... " />
-                <marker date="1527858176000" expanded="true" signature="1867:1962" ph="INSERT INTO ${self::$table}... " />
-                <marker date="1527858176000" expanded="true" signature="2399:2480" ph="INSERT INTO ${self::$table}... " />
+                <marker date="1528101598000" expanded="true" signature="236:250" ph="SELECT * FRO... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="236:264" ph="SELECT * FRO... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="502:509" ph="SELECT * FRO... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="502:660" ph="SELECT * FRO... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="502:661" ph="SELECT * FRO... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="502:662" ph="SELECT * FRO... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="1170:1368" ph="SELECT title... ${self::$table}" />
+                <marker date="1528101598000" expanded="true" signature="1869:1881" ph="INSERT INTO ${self::$table}... " />
+                <marker date="1528101598000" expanded="true" signature="1869:1963" ph="INSERT INTO ${self::$table}... " />
+                <marker date="1528101598000" expanded="true" signature="1869:1964" ph="INSERT INTO ${self::$table}... " />
+                <marker date="1528101598000" expanded="true" signature="2401:2482" ph="INSERT INTO ${self::$table}... " />
               </folding>
             </state>
           </provider>
@@ -156,15 +164,16 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/controllers/utilisateur.ctrl.php" />
-        <option value="$PROJECT_DIR$/views/film/create.html.php" />
         <option value="$PROJECT_DIR$/dump.sql" />
         <option value="$PROJECT_DIR$/models/movie_has_user.php" />
         <option value="$PROJECT_DIR$/routes.php" />
         <option value="$PROJECT_DIR$/models/userHasFilm.model.php" />
         <option value="$PROJECT_DIR$/views/film/mybase.html.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/views/film/create.html.php" />
+        <option value="$PROJECT_DIR$/models/film.model.php" />
         <option value="$PROJECT_DIR$/controllers/film.ctrl.php" />
         <option value="$PROJECT_DIR$/views/film/index.html.php" />
-        <option value="$PROJECT_DIR$/models/film.model.php" />
       </list>
     </option>
   </component>
@@ -305,7 +314,7 @@
       <workItem from="1527675112496" duration="91000" />
       <workItem from="1527675266128" duration="362000" />
       <workItem from="1527675883618" duration="21305000" />
-      <workItem from="1527755704900" duration="17640000" />
+      <workItem from="1527755704900" duration="20374000" />
     </task>
     <task id="LOCAL-00001" summary="Adding add to list and add to viewed function + merging film.index and film.mybase files">
       <created>1527856956997</created>
@@ -314,11 +323,32 @@
       <option name="project" value="LOCAL" />
       <updated>1527856956997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding UI for viewed film + small corrections for SQL request">
+      <created>1527858340311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527858340311</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add gitignore">
+      <created>1527858516185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527858516185</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bug correction for Add and View">
+      <created>1528104086220</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528104086220</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75536000" />
+    <option name="totallyTimeSpent" value="78270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="0" />
@@ -327,7 +357,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288835" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -352,7 +382,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding add to list and add to viewed function + merging film.index and film.mybase files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding add to list and add to viewed function + merging film.index and film.mybase files" />
+    <MESSAGE value="Adding UI for viewed film + small corrections for SQL request" />
+    <MESSAGE value="Add gitignore" />
+    <MESSAGE value="Bug correction for Add and View" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug correction for Add and View" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,13 +394,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/01a_MémoriserUtilisateur/utilisateur.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -421,17 +447,17 @@
         <state relative-caret-position="75">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
-            <marker date="1527858176000" expanded="true" signature="236:250" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="236:264" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:509" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:660" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:661" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:662" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="1170:1366" ph="SELECT title... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="1867:1879" ph="INSERT INTO ${self::$table}... " />
-            <marker date="1527858176000" expanded="true" signature="1867:1961" ph="INSERT INTO ${self::$table}... " />
-            <marker date="1527858176000" expanded="true" signature="1867:1962" ph="INSERT INTO ${self::$table}... " />
-            <marker date="1527858176000" expanded="true" signature="2399:2480" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="236:250" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="236:264" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:509" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:660" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:661" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:662" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="1170:1368" ph="SELECT title... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="1869:1881" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="1869:1963" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="1869:1964" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="2401:2482" ph="INSERT INTO ${self::$table}... " />
           </folding>
         </state>
       </provider>
@@ -504,7 +530,9 @@
         <state relative-caret-position="45">
           <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
-            <element signature="e#1172#1179#1#HTML" expanded="true" />
+            <element signature="e#804#811#1#HTML" expanded="true" />
+            <marker date="1528103616000" expanded="true" signature="7960:8049" ph="..." />
+            <marker date="1528103616000" expanded="true" signature="8005:8040" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -698,17 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/film/create.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1527774096000" expanded="true" signature="704:1079" ph="..." />
-            <marker date="1527774096000" expanded="true" signature="1120:1375" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dump.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
@@ -760,9 +777,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/film/create.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="116" lean-forward="false" selection-start-line="20" selection-start-column="116" selection-end-line="20" selection-end-column="116" />
+          <folding>
+            <marker date="1528101624000" expanded="true" signature="704:1012" ph="..." />
+            <marker date="1528101624000" expanded="true" signature="1053:1320" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/film.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <marker date="1528101598000" expanded="true" signature="236:250" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="236:264" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:509" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:660" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:661" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="502:662" ph="SELECT * FRO... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="1170:1368" ph="SELECT title... ${self::$table}" />
+            <marker date="1528101598000" expanded="true" signature="1869:1881" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="1869:1963" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="1869:1964" ph="INSERT INTO ${self::$table}... " />
+            <marker date="1528101598000" expanded="true" signature="2401:2482" ph="INSERT INTO ${self::$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
+        <state relative-caret-position="675">
           <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
           <folding />
         </state>
@@ -770,38 +826,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/film.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="110" column="51" lean-forward="true" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+        <state relative-caret-position="651">
+          <caret line="160" column="55" lean-forward="true" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/film/index.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        <state relative-caret-position="105">
+          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
           <folding>
-            <element signature="e#1172#1179#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/film.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="38" column="125" lean-forward="false" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
-          <folding>
-            <marker date="1527858176000" expanded="true" signature="236:250" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="236:264" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:509" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:660" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:661" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="502:662" ph="SELECT * FRO... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="1170:1366" ph="SELECT title... ${self::$table}" />
-            <marker date="1527858176000" expanded="true" signature="1867:1879" ph="INSERT INTO ${self::$table}... " />
-            <marker date="1527858176000" expanded="true" signature="1867:1961" ph="INSERT INTO ${self::$table}... " />
-            <marker date="1527858176000" expanded="true" signature="1867:1962" ph="INSERT INTO ${self::$table}... " />
-            <marker date="1527858176000" expanded="true" signature="2399:2480" ph="INSERT INTO ${self::$table}... " />
+            <element signature="e#804#811#1#HTML" expanded="true" />
+            <marker date="1528103616000" expanded="true" signature="7960:8049" ph="..." />
+            <marker date="1528103616000" expanded="true" signature="8005:8040" ph="{...}" />
           </folding>
         </state>
       </provider>
