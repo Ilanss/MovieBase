@@ -126,8 +126,11 @@ class filmCtrl{
         $errors = userHasFilm::add($values);
 
         if(empty($errors)){
-            $success = "Le film a été ajouté avec votre liste";
-            $films = film::all();
+            $success = "Le film a été ajouté à votre liste";
+            $values = [
+                ':id' => $_SESSION['id']
+            ];
+            $films = film::allFilmPlusList($values);
             require_once ('views/film/index.html.php');
             unset($success);
         }
@@ -147,6 +150,11 @@ class filmCtrl{
         require_once ('models/userHasFilm.model.php');
 
         $errors = userHasFilm::view($values);
+
+        $values = [
+            ':id' => $_SESSION['id']
+        ];
+        $films = film::allFilmPlusList($values);
 
         if(empty($errors)){
             $success = "Le film à été coché comme vu!";

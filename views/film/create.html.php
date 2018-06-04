@@ -18,13 +18,13 @@
                     <input type="text" class="form-control" id="title" name="title" placeholder="Entrer le nom du film" value="<?php echo isset($_POST['title']) ? $_POST['title'] : '' ?>">
                 </div>
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="image" name="image" accept=".png, .jpg, .jpeg" value="<?php echo isset($_POST['image']) ? $_POST['image'] : '' ?>">
+                    <input type="file" class="custom-file-input" id="image" name="image" accept=".png, .jpg, .jpeg" >
                     <label class="custom-file-label" for="image">Choisir une image...</label>
                     <div class="invalid-feedback">Fichier invalide</div>
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea class="form-control" id="description" name="description" rows="3"><?php echo isset($_POST['title']) ? $_POST['title'] : '' ?></textarea>
+                    <textarea class="form-control" id="description" name="description" rows="3"><?php echo isset($_POST['description']) ? $_POST['description'] : '' ?></textarea>
                 </div>
                 <?php
                 if(isset($_POST['id'])){

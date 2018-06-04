@@ -12,13 +12,6 @@
     <div class="row">
         <div class="col-md-12">
             <?php require_once ('views/layouts/notice.php'); ?>
-            <div class="row">
-                <div class="col-auto justify-content-end">
-                    <form action="<?php echo $_SESSION['root'] ?>/film/create" method="post">
-                        <button type="submit" class="btn btn-primary" name="add" id="add">Ajouter un film</button>
-                    </form>
-                </div>
-            </div>
             <!-- Modal -->
             <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -40,85 +33,112 @@
                 </div>
             </div>
             <?php
-            foreach ($films as $film){
+            if(!empty($films)) {
                 ?>
                 <div class="row">
-                    <div class="col-md-12 film">
-                        <div class="row">
-                            <div class="col-md-3 image"><img class="img-fluid" src="<?php
-                                if(empty($film->image)){
-                                    echo "assets/img/poster-placeholder.png";
-                                }
-                                else{
-                                    echo $film->image;
-                                };
-                                ?>"></div>
-                            <div class="col-md-7">
-                                <h1 class="title"><?php echo $film->title ?></h1>
-                                <p class="desc"><?php echo $film->description ?></p>
-                            </div>
-                            <div class="col-md-2">
-                                <?php
-                                if(!empty($_SESSION['login'])) {
-                                    if($film->list) {
-                                        ?>
-                                            <button type="submit" class="btn btn-outline-secondary pull-right disabled" name="list"
+                <div class="col-auto justify-content-end">
+                    <form action="<?php echo $_SESSION['root'] ?>/film/create" method="post">
+                        <button type="submit" class="btn btn-primary" name="add" id="add">Ajouter un film</button>
+                    </form>
+                </div>
+            </div>
+                <?php
+                foreach ($films as $film) {
+                    ?>
+                    <div class="row">
+                        <div class="col-md-12 film">
+                            <div class="row">
+                                <div class="col-md-3 image"><img class="img-fluid" src="<?php
+                                    if (empty($film->image)) {
+                                        echo "assets/img/poster-placeholder.png";
+                                    } else {
+                                        echo $film->image;
+                                    };
+                                    ?>"></div>
+                                <div class="col-md-7">
+                                    <h1 class="title"><?php echo $film->title ?></h1>
+                                    <p class="desc"><?php echo $film->description ?></p>
+                                </div>
+                                <div class="col-md-2">
+                                    <?php
+                                    if (!empty($_SESSION['login'])) {
+                                        if ($film->list) {
+                                            ?>
+                                            <button type="submit" class="btn btn-outline-secondary pull-right disabled"
+                                                    name="list"
                                                     id="submit">Déjà dans ma liste
                                             </button>
-                                        <?php
-                                        if($film->vu) {
-                                            ?>
-                                            <button type="submit" class="btn btn-outline-secondary pull-right disabled" name="vu"
-                                                    id="submit">Déjà vu!
-                                            </button>
                                             <?php
-                                        }
-                                        else {
+                                            if ($film->vu) {
+                                                ?>
+                                                <button type="submit"
+                                                        class="btn btn-outline-secondary pull-right disabled" name="vu"
+                                                        id="submit">Déjà vu!
+                                                </button>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <form action="<?php echo $_SESSION['root']; ?>/film/view" method="post">
+                                                    <input type="hidden" value="<?php echo $film->id ?>" name="vu">
+                                                    <button type="submit" class="btn btn-outline-primary pull-right"
+                                                            id="submit">Film visionné
+                                                    </button>
+                                                </form>
+                                                <?php
+                                            }
+                                        } else {
                                             ?>
-                                            <form action="film/view" method="post">
-                                                <input type="hidden" value="<?php echo $film->id ?>" name="vu">
+                                            <form action="<?php echo $_SESSION['root']; ?>/film/add" method="post">
+                                                <input type="hidden" value="<?php echo $film->id; ?>" name="id">
                                                 <button type="submit" class="btn btn-outline-primary pull-right"
-                                                        id="submit">Film visionné
+                                                        name="list"
+                                                        id="submit">Ajouter à ma liste
                                                 </button>
                                             </form>
                                             <?php
                                         }
-                                    }
-                                    else{
-                                        ?>
-                                        <form action="film/add" method="post">
-                                        <input type="hidden" value="<?php echo $film->id; ?>" name="id">
-                                            <button type="submit" class="btn btn-outline-primary pull-right" name="list"
-                                                    id="submit">Ajouter à ma liste
-                                            </button>
-                                        </form>
-                                        <?php
-                                    }
 
-                                    if($_SESSION['admin']) {
-                                        ?>
-                                        <form action="<?php echo $_SESSION['root'] ?>/film/modify" method="post">
-                                            <input type="hidden" value="<?php echo $film->title ?>" name="title">
-                                            <input type="hidden" value="<?php echo $film->image ?>" name="image">
-                                            <input type="hidden" value="<?php echo $film->description ?>" name="description">
-                                            <input type="hidden" value="<?php echo $film->id ?>" name="id">
-                                            <button type="submit" class="btn btn-outline-warning" name="modify"
-                                                    id="submit">
-                                                Modifier le film
-                                            </button>
-                                        </form>
-                                            <button type="button" class="btn btn-outline-danger" name="delete" id="submit" data-toggle="modal" data-target="#delete">
+                                        if ($_SESSION['admin']) {
+                                            ?>
+                                            <form action="<?php echo $_SESSION['root'] ?>/film/modify" method="post">
+                                                <input type="hidden" value="<?php echo $film->title ?>" name="title">
+                                                <input type="hidden" value="<?php echo $film->image ?>" name="image">
+                                                <input type="hidden" value="<?php echo $film->description ?>"
+                                                       name="description">
+                                                <input type="hidden" value="<?php echo $film->id ?>" name="id">
+                                                <button type="submit" class="btn btn-outline-warning" name="modify"
+                                                        id="submit">
+                                                    Modifier le film
+                                                </button>
+                                            </form>
+                                            <button type="button" class="btn btn-outline-danger" name="delete"
+                                                    id="submit" data-toggle="modal" data-target="#delete">
                                                 Supprimer le film
                                             </button>
-                                        <?php
+                                            <?php
+                                        }
                                     }
-                                }
-                                ?>
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <hr>
+                    <?php
+                }
+            }
+            else{
+                ?>
+                <div class="row">
+                    <div class="col text-center"><h1>Oups...</h1>Il n'y a pas de films à afficher...</div>
                 </div>
-                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <form action="<?php echo $_SESSION['root'] ?>/film/create" method="post">
+                            <button type="submit" class="btn btn-primary" name="add" id="add">Ajouter un film</button>
+                        </form>
+                    </div>
+                </div>
                 <?php
             }
             ?>
