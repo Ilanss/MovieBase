@@ -5,6 +5,11 @@ Ce projet de site web à été développé dans le cadre d'un cours de développ
 1. Télécharger la totalité du projet
 2. Décompresser l'archive
 3. Placer le contenu du dossier à l'endroit voulut sur le serveur (racine ou pas)
-4. Importez le fichier dump.sql dans votre base de données (celui contient la structure de la base de données ainsi que quelques films et un utilisateur de type administrateur)
+4. Importez le fichier `dump.sql` dans votre base de données (celui contient la structure de la base de données ainsi que quelques films et un utilisateur de type administrateur)
 5. Ouvrir le fichier `config.php` et le modifier en fonction de votre configuration
+  * DB_USER = Utilisateur de la BDD
+  * DB_PASS = Mot de passe de la BDD
+  * DB_NAME = Nom de la BDD
+  * DB_HOST = Adresse de la BDD (probablement localhost)
+  * SITE_ROOT = Chemin du site dans le cas ou il n'est pas à la racine
 6. Enjoy! Le site est fonctionnel!
