@@ -1,5 +1,5 @@
 # MovieBase
-Ce projet de site web à été développé dans le cadre d'un cours de développement PHP/SQL à la HEIG-VD. Le but de ce site est de permettre à de utilisateurs d'insérer des films, de les ajouter à leur liste et d'indiquer si ils ont été visionné. Il possède aussi une gestion de comptes administrateur.
+Ce projet de site web à été développé dans le cadre d'un cours de développement PHP/SQL à la HEIG-VD. Le but de ce site est de permettre à des utilisateurs d'insérer des films, de les ajouter à leur liste et d'indiquer si ils ont été visionné. Il possède aussi une gestion de comptes administrateur.
 
 # How to
 1. Télécharger la totalité du projet
