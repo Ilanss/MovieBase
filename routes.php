@@ -13,7 +13,8 @@ $request_uri = str_replace($base, '', $request_uri);
 switch ($request_uri[0]) {
     // Home page
     case '/':
-        require 'views/home.html.php';
+        require_once ('controllers/film.ctrl.php');
+        filmCtrl::all();
         break;
     // Everything else
 
