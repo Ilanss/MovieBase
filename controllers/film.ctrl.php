@@ -108,10 +108,63 @@ class filmCtrl{
             ];
 
         $films = film::filmFromUser($values);
-        require_once ('views/film/mybase.html.php');
+        require_once ('views/film/index.html.php');
     }
 
     public static function find(){
 
+    }
+
+    public static function add(){
+        $values = [
+            ':idFilm' => $_POST['id'],
+            ':idUser' => $_SESSION['id']
+        ];
+
+        require_once ('models/userHasFilm.model.php');
+
+        $errors = userHasFilm::add($values);
+
+        if(empty($errors)){
+            $success = "Le film a été ajouté à votre liste";
+            $values = [
+                ':id' => $_SESSION['id']
+            ];
+            $films = film::allFilmPlusList($values);
+            require_once ('views/film/index.html.php');
+            unset($success);
+        }
+        else{
+            $errors = "Une erreur s'est produite lors de l'insertion du film dans votre liste...";
+            require_once('views/film/index.html.php');
+            unset($errors);
+        }
+    }
+
+    public static function view(){
+        $values = [
+            ':idFilm' => $_POST['vu'],
+            ':idUser' => $_SESSION['id']
+        ];
+
+        require_once ('models/userHasFilm.model.php');
+
+        $errors = userHasFilm::view($values);
+
+        $values = [
+            ':id' => $_SESSION['id']
+        ];
+        $films = film::allFilmPlusList($values);
+
+        if(empty($errors)){
+            $success = "Le film à été coché comme vu!";
+            require_once ('views/film/index.html.php');
+            unset($success);
+        }
+        else{
+            $errors = "Une erreur s'est produite lors de l'ajout au film vu...";
+            require_once ('views/film/index.html.php');
+            unset($errors);
+        }
     }
 }

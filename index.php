@@ -9,6 +9,8 @@
 
 /* --- Charge la configuration utilisateur --- */
 require_once ('database.php');
+require('Smarty/Smarty.class.php');
+$smarty = new Smarty();
 session_start();
 $base = require_once('config.php');
 $base = $base['SITE_ROOT'];

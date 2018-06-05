@@ -22,7 +22,7 @@ class film
 
     public static function filmFromUser($values){
         $db = database::connect();
-        $req = $db->prepare('SELECT * FROM '.self::$table.' INNER JOIN movie_has_user ON movie_has_user.movie_id = movie.id WHERE user_id = :id');
+        $req = $db->prepare('SELECT id, title, description, image, 1 as list, vu  FROM '.self::$table.' INNER JOIN movie_has_user ON movie_has_user.movie_id = movie.id WHERE user_id = :id');
         if ($req->execute([':id' => $values[':id']])) {
             $res = $req->fetchAll(PDO::FETCH_OBJ);
             return $res;
@@ -36,7 +36,7 @@ class film
 
     public static function allFilmPlusList($values){
         $db = database::connect();
-        $req = $db->prepare('SELECT id, title, description, image, SUM(CASE WHEN user_id = :id THEN 1 ELSE 0 END) AS list FROM '.self::$table.' LEFT JOIN movie_has_user ON movie_has_user.movie_id = movie.id GROUP BY title');
+        $req = $db->prepare('SELECT id, title, description, image, SUM(CASE WHEN user_id = :id THEN 1 ELSE 0 END) AS list, vu   FROM '.self::$table.' LEFT JOIN movie_has_user ON movie_has_user.movie_id = movie.id GROUP BY title');
         if ($req->execute([':id' => $values[':id']])) {
             $res = $req->fetchAll(PDO::FETCH_OBJ);
             return $res;
