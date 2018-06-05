@@ -13,3 +13,6 @@ Ce projet de site web à été développé dans le cadre d'un cours de développ
   * DB_HOST = Adresse de la BDD (probablement localhost)
   * SITE_ROOT = Chemin du site dans le cas ou il n'est pas à la racine
 6. Enjoy! Le site est fonctionnel!
+
+# Future change
+Le site est en train d'être migré pour utiliser le système de templating Smarty. Il sera publié dans un autre repo (ou éventuellement celui-ci).
