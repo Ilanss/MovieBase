@@ -32,7 +32,7 @@ Administrateur:
 
 Utilisateur test:
 > Login->test
-> Password->1234
+> password->1234
 
 # Future change
 Le site est en train d'être migré pour utiliser le système de templating Smarty. Il sera publié dans un autre repo (ou éventuellement celui-ci).
